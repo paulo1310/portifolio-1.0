@@ -1,0 +1,290 @@
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'Lt-superior';
+    src: url(../fonts/LTSuperior-Black.otf);
+}
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+body::-webkit-scrollbar {
+	width: 1.2rem;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color:  rgb(255, 0, 0);
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+header.sticky{
+    background:  rgba(243, 242, 242, 0.993);
+    transition: all .45s ease;
+}
+
+.main-header .logo {
+    font-size: 4rem;
+    letter-spacing: 6px;
+    color: rgb(255, 0, 0);
+}
+
+.main-header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.main-header ul a {
+    margin: 20px;
+    color: black;
+    font-size: 2.1rem;
+}
+
+.main-header ul li {
+    border-radius: 50px;
+    border: solid 2px transparent;
+}
+
+.main-header ul li:hover {
+    border-radius: 50px;
+    background-color: rgb(255, 0, 0);
+    border: solid 2px black;
+}
+
+.main-header ul li:hover a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.main-header,
+.home {
+    background-image: url(../images/Fundo-branco.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    min-height: 100vh;
+    padding: 0 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home p {
+    font-size: 5rem;
+}
+.home h1 {
+    font-size: 7rem;
+}
+
+.home .fotoperfil {
+    width: 350px;
+    border-radius: 100%;
+    margin: 1rem;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, black, rgb(255, 0, 0)) border-box;
+    border: 5px solid transparent;
+}
+
+/* SOBRE */
+
+.sobre {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    padding: 6rem 2rem;
+    min-height: 70vh;
+    background-color: rgba(243, 242, 242, 0.89);
+}
+
+.sobre h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: rgb(255, 0, 0);
+}
+
+.conteudosobre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre img {
+    width: 20rem;
+    display: flex;
+}
+
+.sobre p {
+    display: flex;
+    font-size: 2rem;
+    max-width: 700px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+/* TECNOLOGIAS */
+
+.tecnologias {
+    padding: 4rem 2rem;
+}
+
+.tecnologias h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 20px 0;
+    color: rgb(255, 0, 0);
+}
+
+.tecnologias p {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tecnologias .icones {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.tecnologias .icones img {
+    width: 80px;
+    margin: 0 20px;
+}
+
+/* PROJETOS */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(243, 242, 242, 0.89);
+    padding: 2rem 0;
+}
+
+.projects h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 3rem 0;
+    color: rgb(255, 0, 0);
+}
+
+.projects .container-project .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 450px;
+    height: 620px;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, black, rgb(255, 0, 0)) border-box;
+    border: 3px solid transparent;
+    border-radius: 30px;
+}
+
+.container-project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects .container-project h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+.projects .container-project img {
+    align-self: center;
+    max-width: 300px;
+}
+
+.projects .container-project .info-project {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.projects .container-project .botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects .container-project .botoes a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 10px 0;
+    background-color: red;
+    color: black;
+    border-radius: 50px;
+    width: 200px;
+    border: solid 2px black;
+}
+
+.projects .container-project .botoes a:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: solid 1px black;
+}
+
+/* CONTATO */
+
+.contato {
+    padding: 0 2rem;
+}
+
+.contato h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 20px 0;
+    color: rgb(255, 0, 0);
+}
+
+.contato p {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contato .social {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.contato .social i {
+    color: black;
+}
+
+.contato .social a {
+    margin: 0 30px;
+    padding: 20px 0;
+}
+
+.contato .social i:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
